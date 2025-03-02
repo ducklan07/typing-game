@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <h1 id="start-text">start</h1>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+        <div id="words-container"></div>
+    </div>
+    
+    <div id="game-over-screen" class="screen hidden">
+        <h1>Game Over!</h1>
+        <p>Time survived: <span id="time-survived">0</span></p>
+        <p>Words killed: <span id="words-killed">0</span></p>
+        <p>Press Enter to play again</p>
+    </div>
+
+    <div id="input-area">
+        <input type="text" id="typing-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
